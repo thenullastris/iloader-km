@@ -74,7 +74,7 @@ export const Settings = ({
     return log.level >= Number(logLevelFilter);
   });
 
-  const [lang, setLang] = useStore<string>("lang", "en");
+  const [lang, setLang] = useStore<string>("lang", "km");
 
   useEffect(() => {
     i18n.changeLanguage(lang);

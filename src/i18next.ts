@@ -27,7 +27,7 @@ const languages = [
   ["cs_cz", "Čeština"],
   ["sv", "Svenska"],
   ["hu", "Magyar"],
-  ["kh", "ភាសាខ្មែរ"],
+  ["km", "ភាសាខ្មែរ"],
   ["id", "Bahasa Indonesia"],
   ["pt_br", "Português (Brasileiro)"]
 ] as const;
@@ -55,10 +55,10 @@ const resources = Object.fromEntries(
 );
 
 i18n
-  .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    fallbackLng: "en",
+    lng: "km",
+    fallbackLng: "km",
     interpolation: {
       escapeValue: false,
     },
